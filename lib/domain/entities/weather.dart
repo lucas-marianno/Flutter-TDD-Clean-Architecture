@@ -1,7 +1,7 @@
 import 'package:equatable/equatable.dart';
 
-class WheatherEntity extends Equatable {
-  const WheatherEntity({
+class WeatherEntity extends Equatable {
+  const WeatherEntity({
     required this.cityName,
     required this.main,
     required this.description,

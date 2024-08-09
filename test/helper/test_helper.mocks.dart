@@ -9,9 +9,9 @@ import 'dart:typed_data' as _i10;
 
 import 'package:dartz/dartz.dart' as _i2;
 import 'package:flutter_tdd_clean_architecture/core/error/failure.dart' as _i6;
-import 'package:flutter_tdd_clean_architecture/domain/entities/wheather.dart'
+import 'package:flutter_tdd_clean_architecture/domain/entities/weather.dart'
     as _i7;
-import 'package:flutter_tdd_clean_architecture/domain/repositories/wheather_repository.dart'
+import 'package:flutter_tdd_clean_architecture/domain/repositories/weather_repository.dart'
     as _i4;
 import 'package:http/http.dart' as _i3;
 import 'package:mockito/mockito.dart' as _i1;
@@ -61,33 +61,32 @@ class _FakeStreamedResponse_2 extends _i1.SmartFake
         );
 }
 
-/// A class which mocks [WheatherRepository].
+/// A class which mocks [WeatherRepository].
 ///
 /// See the documentation for Mockito's code generation for more information.
-class MockWheatherRepository extends _i1.Mock
-    implements _i4.WheatherRepository {
-  MockWheatherRepository() {
+class MockWeatherRepository extends _i1.Mock implements _i4.WeatherRepository {
+  MockWeatherRepository() {
     _i1.throwOnMissingStub(this);
   }
 
   @override
-  _i5.Future<_i2.Either<_i6.Failure, _i7.WheatherEntity>> getCurrentWheather(
+  _i5.Future<_i2.Either<_i6.Failure, _i7.WeatherEntity>> getCurrentWeather(
           String? cityName) =>
       (super.noSuchMethod(
         Invocation.method(
-          #getCurrentWheather,
+          #getCurrentWeather,
           [cityName],
         ),
         returnValue:
-            _i5.Future<_i2.Either<_i6.Failure, _i7.WheatherEntity>>.value(
-                _FakeEither_0<_i6.Failure, _i7.WheatherEntity>(
+            _i5.Future<_i2.Either<_i6.Failure, _i7.WeatherEntity>>.value(
+                _FakeEither_0<_i6.Failure, _i7.WeatherEntity>(
           this,
           Invocation.method(
-            #getCurrentWheather,
+            #getCurrentWeather,
             [cityName],
           ),
         )),
-      ) as _i5.Future<_i2.Either<_i6.Failure, _i7.WheatherEntity>>);
+      ) as _i5.Future<_i2.Either<_i6.Failure, _i7.WeatherEntity>>);
 }
 
 /// A class which mocks [Client].
