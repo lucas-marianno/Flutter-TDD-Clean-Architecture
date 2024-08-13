@@ -13,6 +13,7 @@ void main() {
 
   const testWeatherDetail = WeatherEntity(
     cityName: 'New York',
+    country: 'BR',
     main: 'clouds',
     description: 'few clouds',
     iconCode: '02d',

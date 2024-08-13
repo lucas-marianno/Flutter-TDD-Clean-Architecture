@@ -22,6 +22,7 @@ void main() {
 
   const testWeatherEntity = WeatherEntity(
     cityName: 'São Paulo',
+    country: 'BR',
     main: 'Clear',
     description: 'clear sky',
     iconCode: '01n',

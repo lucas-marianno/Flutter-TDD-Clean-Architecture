@@ -17,6 +17,7 @@ void main() {
   const testCityName = 'Sao Paulo';
   const testWeatherModel = WeatherModel(
     cityName: 'São Paulo',
+    country: 'BR',
     main: 'Clear',
     description: 'clear sky',
     iconCode: '01n',
@@ -26,6 +27,7 @@ void main() {
   );
   const testWeatherEntity = WeatherEntity(
     cityName: 'São Paulo',
+    country: 'BR',
     main: 'Clear',
     description: 'clear sky',
     iconCode: '01n',

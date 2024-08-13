@@ -13,6 +13,7 @@ import '../../helper/json_reader.dart';
 void main() {
   const testWeatherModel = WeatherModel(
     cityName: 'São Paulo',
+    country: 'BR',
     main: 'Clear',
     description: 'clear sky',
     iconCode: '01n',
@@ -54,6 +55,9 @@ void main() {
           'pressure': 1014,
           'humidity': 57,
         },
+        'sys': {
+          'country': 'BR',
+        },
         'name': 'São Paulo',
       };
 
@@ -68,6 +72,7 @@ void main() {
       // arrange
       const testWeatherEntity = WeatherEntity(
         cityName: 'São Paulo',
+        country: 'BR',
         main: 'Clear',
         description: 'clear sky',
         iconCode: '01n',
