@@ -71,14 +71,15 @@ void main() {
     expect(progressIndicator, findsOneWidget);
   });
 
-  testWidgets('should show data when state is Loaded', (widgetTester) async {
+  testWidgets('should show data when state is Loaded', (tester) async {
     // arrange
     when(
       () => mockWeatherBloc.state,
     ).thenReturn(const WeatherLoaded(testWeatherEntity));
 
     // act
-    await widgetTester.pumpWidget(makeTestableWidget(const WeatherPage()));
+    await tester.pumpWidget(makeTestableWidget(const WeatherPage()));
+    await tester.pumpAndSettle(const Duration(milliseconds: 500));
 
     // assert
     final weatherDataWidget = find.byKey(const Key('weather_data'));
